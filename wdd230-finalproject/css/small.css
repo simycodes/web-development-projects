@@ -1,0 +1,913 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #F4F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+h1, h2, h3, h4 {
+    color: #1573B7;
+    letter-spacing: 0.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+    font-family:'Playfair Display', serif;
+}
+
+/*----------- HEADER AND NAVIGATION  --------------*/
+
+header {
+    background-color: #F5EBE0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: -1rem;
+    font-weight: bold;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #1573B7;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color: #49A6E9;
+}
+
+.nav-toggle-rotate {
+   transform: rotate(90deg);
+}
+
+.logo {
+    width: 200px; 
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-links {
+    height: 10rem;
+}
+
+.links a {
+    color: black;
+    font-size: 1.1rem;
+    display: block;
+    padding: 0.1rem 1.1rem;
+    margin-left: -2.2rem;
+    transition: all 0.2s linear;
+}
+
+.links a:hover {
+    color:#1573B7;
+    padding-left: 1.5rem;
+}
+
+.active {
+    background-color: #F4F5F5;
+    border-radius: 5px;
+}
+
+.social-icons {
+    font-size: 1.2rem;
+    display: none;
+}
+
+/* dropdown css */
+
+.dropdown {
+    background-color: #F4F5F5;
+    padding:1.5rem;
+    padding-left: 2rem;
+    display:none;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown a {
+    font-size: 1rem;
+    display: block;
+}
+.drop-down-container:hover .dropdown {
+    display: block;
+}
+
+/*----------- MAIN --------------*/
+main h1 {
+    font-size: 2.5rem;
+    color: #1573B7;
+}
+
+main h2,h3 {
+    text-align: center;
+    color: #1573B7;
+}
+
+main div {
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+}
+
+main figure img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+
+main figure {
+    width: 100%;
+    margin: 0;
+}
+
+main figure figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* start of home page hero-banner image css */
+
+.banner {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: url("../images/banner-image-6.jpg") center/cover no-repeat;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    color: #1573B7;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+}
+
+.simple-message {
+    font-size: 1rem;
+    color: white;
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+}
+
+/* .container p {
+    font-size: 1.1rem;
+    color: #1573B7;
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+} */
+
+.banner-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #49A6E9;
+    display: inline-block;
+    background-color: #FFF0E0;
+    border: 2px solid #FFF0E0;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    cursor: pointer;   
+}
+
+.banner-button:hover {
+    color: #FFF0E0;
+    background:#49A6E9;
+    border: 2px solid #49A6E9;
+}
+
+/*End of of home page hero-banner image css */
+
+
+/* home grid styling */
+.centering-content {
+    max-width: 75rem; /* 1200px */
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #1573B7;
+}
+
+.home-grid {
+    display:block;
+    max-width: 75rem;/* 1200px */
+    margin: 0 auto;
+}
+
+.first-highlight {
+    /* border: 2px solid black; */
+    padding:1rem;
+    height:auto
+}
+
+.hotel-image-one {
+    width: auto;
+    height: auto;
+}
+
+.temple-image-one {
+  width:auto;
+  height:auto;
+}
+
+.first-highlight-b {
+    width: auto;
+    height: auto;
+}
+
+.second-highlight {
+    padding: 1rem;
+    height: auto
+}
+
+.hotel-image-three {
+    width: auto;
+    height: auto;
+}
+
+.third-highlight {
+    padding: 1rem;
+    height: auto
+}
+
+.hotel-image-four {
+    width: auto;
+    height: auto;
+}
+
+.first-highlight h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.first-highlight-b h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.second-highlight h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.image-styling img {
+    /* border: 2px solid black; */
+    border-radius: 7px;
+}
+
+.blue-intro {
+    color: #1573B7;
+    font-size: 1rem;
+}
+
+h3.about-temple {
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* weather content styles */
+
+.current-weather {
+    color: #1573B7;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.3);
+    width:330px;
+    height:450px;
+}
+
+.current-weather h2 {
+    font-size: 1.2rem;
+}
+
+.current-weather h3 {
+    font-size: 1.2rem;
+}
+
+.top-weather-information-container {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.left-side-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+}
+
+.weather-border {
+    border-right:2px dashed #1573B7;
+}
+
+.right-side-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+}
+
+.right-side-information h3 {
+    margin-right: 20px;
+}
+
+.forecast-weather-information-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.weather-image {
+    width: 100px;
+}
+
+.weather-image img {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.weather-image-2 {
+    width: 80px;
+    background-color: #1573B7;
+    border-radius: 30%;
+}
+
+.weather-image-2 img {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.weather-image-2 figcaption {
+    color:#FFFFFF;
+}
+
+/* font awesome styling */
+.weather-icon {
+    font-size: 5rem;
+    color: #1573B7;
+}
+
+
+/*----------- FOOTER --------------*/
+
+footer {
+    text-align: center;
+    padding: .5rem 2%;
+    background-color: #FFF0E0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.footer-center {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer-title {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-title p {
+    color: #1573B7;
+    font-size: 1rem;
+}
+
+.footer-content-styling {
+    text-align: center;
+    margin-bottom: -0.8rem;
+}
+
+.copyRightInformation {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer-social-icons {
+    font-size: 2rem;
+}
+
+.footerLogo {
+    width: 130px;
+}
+
+/*----- TEMPLES PAGE SPECIFIC STYLES --------------*/
+
+/* temples block/grid styles */
+
+.temples-grid {
+    display: block;
+    max-width: 75rem;
+    margin: 0rem auto;
+}
+
+
+.temples-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+
+/* end of temples grid styles */
+
+.temples-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 1rem;
+}
+
+.cards section {
+    margin: 0.4rem;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cards section p {
+   font-size: 0.9rem;
+}
+
+.cards section h2 {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.cards section h3 {
+    font-size: 1rem;
+    margin-bottom: -0.8rem;
+    font-style: italic;
+}
+
+.cards img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39), 0 6px 6px rgba(0, 0, 0, 0.33);
+}
+
+.temple-description {
+    color: black;
+    padding: 0.5rem;
+    font-style: italic;
+    background-color: #FFF0E0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.temple-description p {
+    font-size: 1rem;
+}
+
+.temples-first-highlight section h2 {
+    font-size: 1.2rem;
+}
+
+/*----- END OF TEMPLES PAGE SPECIFIC STYLES --------------*/
+
+
+/*----- RESERVATIONS PAGE SPECIFIC STYLES --------------*/
+
+/* reservations grid styles */
+
+.reservations-grid {
+    display: block;
+    max-width: 75rem; /* 1200px */
+    margin: 0 auto;
+}
+
+.temples-first-highlight {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+/* end of reservations grid styles */
+
+/*-----------start of form styles --------------*/
+.form-information {
+    width:350px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+}
+
+.form-information h2 {
+    font-size:1.1rem;
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+   
+    padding: 0.7rem;
+    font-style: italic;
+    background-color: #FFF0E0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: none;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #BC6C25;
+    font-size: 1.1rem;
+    margin-bottom: -1rem;
+}
+
+.sub-legend-styling {
+    color: #BC6C25;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    margin: 0.6rem;
+    color: #1573B7;
+    font-size: 0.9rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    /*this makes chrome and safeli to apply the set css for the select element,and not use its browser default-the drop down arrow on select element goes and must be manualy be put there*/
+    display: block;
+    /*this makes the input fields to go down the input labels */
+    font-size: 1rem;
+    border: none;
+    padding: 0.75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #F4F5F5;
+}
+
+form label.radio-buttons {
+    color: #BC6C25;
+    display: block; /*this makes the radio buttons and check boxes to go down the input labels */
+    padding: 0.7rem;
+    margin-bottom: -2rem;
+}
+
+form input.submitBtn {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #BC6C25;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%; /* This matches the width size on smaller screens  */
+    max-width: 20rem;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.3);
+    transition: background-color 0.4s;
+}
+
+form input.submitBtn:hover {
+    background-color: #1573B7;
+}
+
+/* creating the red border like inside the input fields of the thre required inputs */
+form label.top input:required {
+    border-left: 3px solid #BC6C25;
+}
+
+form label.top input:required:valid {
+    border-left: 3px solid green;
+}
+
+/* Other */
+textarea {
+    resize: none;
+    outline: none;
+    font-size: 1rem;
+    display: block;
+    border: none;
+    padding: 0.8rem;
+    color:black;
+    width: 100%;
+    max-width: 20.5rem;
+    background-color: #F4F5F5;
+}
+
+textarea:invalid {
+    border: 2px solid #BC6C25;
+}
+
+textarea:valid {
+    border: 2px solid green;
+}
+
+/* Thank you page styles -connected to reservation forms */
+.thank-you-page-styles {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding:1rem;
+    font-style: italic;
+}
+
+.thank-you-page-styles h1 {
+   font-size: 1.5rem;
+}
+
+/*-----------end of form styles --------------*/
+
+
+/*----- END OF RESERVATIONS PAGE SPECIFIC STYLES ----*/
+
+
+/*----- START OF CONTACT US PAGE SPECIFIC STYLES ----*/
+
+/* contact hero-banner image css */
+
+.contact-us-banner {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/banner-contact-us-image.jpg") center/cover no-repeat;
+}
+
+.contact-us-container {
+   text-align: center;
+}
+
+.contact-us-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1573B7;
+    width: 20rem;
+    padding: 1rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.contact-us-simple-message {
+    font-size: 1rem;
+    color: #1573B7;
+    width: 20rem;
+    max-width: 32rem;
+}
+
+/*End of contact hero-banner image css */
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:1rem;
+    margin:1rem;
+}
+
+.address-container h3 {
+    font-size: 1rem;
+    margin-bottom: -0.8rem;
+    font-style: italic;
+}
+
+.address-container p {
+    font-size: 0.9rem;
+}
+
+.each-contact {
+    min-width:100px;
+    margin:0.3rem;
+    padding:0.2rem;
+}
+
+#contact-us-heading h2 {
+    text-align: center;
+}
+
+/* start of contact-us grid */
+
+.contact-us-grid {
+    display: block;
+    max-width: 75rem;
+    /* 1200px */
+    margin: 0 auto;
+}
+
+.contact-us-first-highlight {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+/* end of contact-us grid */
+
+/*----- END OF CONTACT US PAGE SPECIFIC STYLES ----*/
+
+
+/*----- START OF SERVICES PAGE SPECIFIC STYLES ----*/
+
+/* services hero-banner image css */
+
+.services-banner {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/services-banner-image.jpg") center/cover no-repeat;
+}
+
+.services-container {
+   text-align: center;
+}
+
+.services-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1573B7;
+    width: 20rem;
+    padding: 1rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.contact-us-simple-message {
+    font-size: 1rem;
+    color: #1573B7;
+    width: 20rem;
+    max-width: 32rem;
+}
+
+/*End of services hero-banner image css */
+
+.services-first-highlight h2 {
+    font-size: 1.4rem;
+}
+
+.services-second-highlight h2 {
+    font-size: 1.4rem;
+}
+
+/* start of services grid */
+
+.services-grid {
+    display: block;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* end of services grid */
+
+/*----- END OF SERVICES PAGE SPECIFIC STYLES ----*/
+
+/*----- START OF FULL-TIME MISSIONARIES PAGE SPECIFIC STYLES ----*/
+
+.full-time-missionaries-first-highlight h2 {
+    font-size: 1.4rem;
+}
+
+.full-time-missionaries-second-highlight h2 {
+    font-size: 1.4rem;
+}
+
+/* start of full time missionaries grid */
+
+.services-grid {
+    display: block;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* end of full-time missionaries grid */
+
+/*----- END OF FULL-TIME MISSIONARIES PAGE SPECIFIC STYLES ----*/
+
+
+/*----- START OF RECEPTION PAGE SPECIFIC STYLES ----*/
+
+/* reception hero-banner image css */
+
+.reception-banner {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/a.jpg") center/cover no-repeat;
+}
+
+.reception-container {
+    text-align: center;
+}
+
+.reception-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffff;
+    width: 20rem;
+    padding: 1rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+
+/*End of reception hero-banner image css */
+
+.reception-first-highlight h2 {
+    font-size: 1.4rem;
+}
+
+.reception-second-highlight h2 {
+    font-size: 1.4rem;
+}
+
+/* start of services grid */
+
+.reception-grid {
+    display: block;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* end of reception grid */
+
+/*----- END OF RECEPTION PAGE SPECIFIC STYLES ----*/

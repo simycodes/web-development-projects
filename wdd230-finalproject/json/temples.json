@@ -1,0 +1,69 @@
+{
+  "temples": [
+     {
+      "id": "0",
+      "name": "Cochabamba Bolivia Temple",
+      "description": "The Cochabamba Bolivia Temple was announced in 1995 and was dedicated by the prophet Gordon B. Hinckley, on 10 November 1996",
+      "address": "Av. Melchor Urquidi 1500 Alto Queru Queru, Cochabamba Bolivia",
+      "telephone": "(591) 4-429-3161",
+      "email": "Log into LDS account to send email to temple",
+      "services":"Patron housing available, Distribution center nearby, Cafeteria available, Clothing rental available",
+      "ordinanceSchedule":"Contact the temple for Ordinance schedule details",
+      "sessionSchedule":"Contact the temple for Session Schedule details",
+      "templeClosureSchedule":"6 Aug 2022, 1 Oct 2022, 3 Oct 2022, 17 Oct 2022, 24 Dec 2022, 31 Dec 2022",
+      "image": "json/images/cochabamba-bolivia-temple.jpg"
+    }, 
+    {
+      "id": "1",
+      "name": "Johannesburg South Africa Temple",
+      "description": "The Johannesburg South Africa Temple was announced in 1981 and was dedicated by the prophet Gordon B. Hinckley, on 24–25 August 1985.",
+      "address": "7 Jubilee Rd Parktown Johannesburg, 2193, South Africa",
+      "telephone": "(27) 11-645-1540",
+      "email": "Log into LDS account to send email to temple",
+      "services":"Patron housing available, Distribution center nearby, No cafeteria available, No clothing rental available",
+      "ordinanceSchedule":"Contact the temple for Ordinance schedule details",
+      "sessionSchedule":"Contact the temple for Session Schedule details",
+      "templeClosureSchedule":"Saturday: 1 October 2022, Wednesday: 23 November 2022, Thursday: 24 November 2022, Saturday: 24 December 2022, Saturday: 31 December 2022",
+      "image": "json/images/johannesburg-south-africa-temple.jpg"
+    }, 
+    {
+      "id": "2",
+      "name": "Accra Ghana Temple",
+      "description": "The Ghana Temple was announced in 1998 and was dedicated was by President Hinckley on 11th January 2004.",
+      "address": "Accra Ghana Temple Complex 57 Independence Ave, North Ridge P.M.B. CT 209, Cantonments, Accra, Ghana",
+      "telephone": "(233) 302-650-123",
+      "email": "Log into LDS account to send email to temple",
+      "services":"Patron housing available, Distribution center nearby, No cafeteria available, No clothing rental available",
+      "ordinanceSchedule":"Contact the temple for Ordinance schedule details",
+      "sessionSchedule":"Contact the temple for Session Schedule details",
+      "templeClosureSchedule":"20 Aug 2022, 13 Sept 2022, 26 Sept 2022, 25 Dec 2022, 26 Dec 2022",
+      "image": "json/images/accra-ghana-temple.jpg"
+    }, 
+    {
+      "id": "3",
+      "name": "London England Temple",
+      "description": "The London England Temple was announced in 1953 and was dedicated was by President David O. McKay, on 7 September 1958.",
+      "address": "West Park Road Newchapel Surrey, England RH7 6HW, United Kingdom",
+      "telephone": "(44) 1342 831-400",
+      "email": "Log into LDS account to send email to temple",
+      "services":"Patron housing available, Distribution center nearby, Clothing rental available, No cafeteria available",
+      "ordinanceSchedule":"Contact the temple for Ordinance schedule details",
+      "sessionSchedule":"Contact the temple for Session Schedule details",
+      "templeClosureSchedule":"Saturday: 1 October 2022, Wednesday: 23 November 2022, Thursday: 24 November 2022, Saturday: 24 December 2022, Saturday: 31 December 2022",
+      "image": "json/images/london-england-temple.jpg"
+    },
+     {
+      "id": "4",
+      "name": "Durban South Africa Temple",
+      "description": "The Durban South Africa Temple was announced in 2011 and was dedicated was by the apostle Ronald A. Rasband, on 16 February 2020,",
+      "address": "2 Izinga Drive Izinga Ridge Umhlanga, KwaZulu-Natal, 4021, South Africa",
+      "telephone": "(27) 31-140-0240",
+      "email": "Log into LDS account to send email to temple",
+      "services":"Patron housing available, Distribution center nearby, No cafeteria available, No clothing rental available",
+      "ordinanceSchedule":"Contact the temple for Ordinance schedule details",
+      "sessionSchedule":"Contact the temple for Session Schedule details",
+      "templeClosureSchedule":"Saturday: 1 October 2022, Wednesday: 23 November 2022, Thursday: 24 November 2022, Saturday: 24 December 2022, Saturday: 31 December 2022",
+      "image": "json/images/durban-south-africa-temple.jpg"
+    }
+  ]
+}

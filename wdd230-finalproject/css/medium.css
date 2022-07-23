@@ -1,0 +1,719 @@
+@media only screen and (min-width: 40em) {
+
+
+/*----------- BODY --------------*/
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1;
+}
+
+/*----------- HEADER AND NAVIGATION--------------*/
+
+header {
+    margin-bottom: -17px;
+}
+
+/*----------- MAIN --------------*/
+
+ main figure {
+     width: 100%;
+     padding-bottom: 0.5rem;
+ }
+
+.container p {
+        max-width: 40rem;
+}
+
+/* start of home page hero-banner image css */
+.banner {
+    min-height: 50vh;
+}
+
+.container h1 {
+    font-size: 4rem;
+    color: #1573B7;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+}
+
+.simple-message {
+    font-size: 1.3rem;
+    color: white;
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+}
+
+.banner-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #49A6E9;
+    display: inline-block;
+    background-color: #FFF0E0;
+    border: 2px solid #FFF0E0;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    color: #FFF0E0;
+    background: #49A6E9;
+    border: 2px solid #49A6E9;
+}
+
+/*End of of home page hero-banner image css */
+
+/* home grid styles */
+.first-highlight h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.second-highlight h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.first-highlight-b h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.home-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.first-highlight {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    height: auto;
+}
+
+.hotel-image-one {
+    grid-column: 5 / 9;
+    grid-row: 1 / 2;
+    height: auto;
+    padding-top: 2rem;
+    margin-bottom: -5rem;
+}
+
+.hotel-image-one img {
+    margin-top: 2.5rem;
+}
+
+.temple-image-one {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    width: 24rem;
+    height: auto;
+}
+
+.first-highlight-b {
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+    width: 24rem;
+    height: auto;
+}
+
+.second-highlight {
+    grid-column: 1 / 10;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    height: auto;
+}
+
+/* inner grid elements of .second-highlight */
+.second-highlight-heading {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    border: 2px dashed #1573B7;
+    border-top-left-radius: 6rem;
+    border-bottom: none;
+    border-right: none;
+    padding: 1rem;
+}
+
+.second-highlight-paragraph {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    width: 25rem;
+    height: auto;
+}
+
+.hotel-image-three {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    width: 20rem;
+    height: auto;
+}
+
+/* end of inner grid elements of .second-highlight */
+
+.third-highlight {
+    grid-column: 1 / 10;
+    grid-row: 4 / 5;
+    display: grid;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px dashed #1573B7;
+    border-top-left-radius: 6rem;
+    border-right:none;
+    border-bottom: none;
+}
+
+/* start of inner grid elements of .third-highlight */
+
+.temple-image-two {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 25rem;
+    height: auto;
+}
+
+.temple-image-two img {
+    margin-left: 3rem;
+}
+
+.temple-image-three {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 25rem;
+    height: auto;
+}
+
+.temple-image-three img {
+    margin-left: 3rem;
+}
+
+.third-highlight-paragraph {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    width: 20rem;
+    height: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.third-highlight-paragraph p {
+    margin-top: 5.5rem;
+}
+
+.current-weather {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    margin-left: 2rem;
+    background: url("../images/weather-image-4.jpg") center/cover no-repeat;
+    width: 320px;
+    height: 480px;
+}
+
+/* end of inner grid elements of .third-highlight */
+
+/*----------- FOOTER --------------*/
+
+footer p {
+    font-size: .9rem;
+}
+
+.footerGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    flex: 1 130px;
+    margin-left: -1.3rem;
+}
+
+.footerAddress {
+    flex: 1 350px;
+    text-align: left;
+    margin-top: .2rem;
+}
+
+.leftInformation {
+    flex: 5 200px;
+    text-align: right;
+    margin-left: 2rem;
+}
+
+/*-----TEMPLES PAGE SPECIFIC STYLES --------------*/
+
+/* temples grid styles */
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    /* border: 2px solid black; */
+}
+
+.temples-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.temples-first-highlight {
+    grid-column: 3 / 9;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+/* .temple-hotel-image-one {
+    grid-column: 5 / 11;
+    grid-row: 1 / 2;
+    height: auto;
+    padding-top: 2rem;
+} */
+
+.temple-hotel-image-one img {
+    margin-top: 1.2rem;
+}
+
+.temples-first-highlight section h2 {
+    font-size: 1.4rem;
+}
+
+/* end of temples grid styles */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+}
+
+.cards section p {
+    font-size: 0.9rem;
+}
+
+.temples-heading {
+    font-size: 2rem;
+}
+
+
+/*-----END OF TEMPLES PAGE SPECIFIC STYLES --------------*/
+
+
+/*----- RESERVATIONS PAGE SPECIFIC STYLES --------------*/
+
+/* reservations grid styles */
+.reservations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.reservations-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.reservations-hotel-image-one {
+    grid-column: 2 / 6 ;
+    grid-row: 1 / 2;
+    width:400px;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.reservations-first-highlight {
+    grid-column: 6 / 11;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+/* end of reservations grid styles */
+
+.form-information {
+    grid-column: 5 / 8;
+    grid-row: 2 / 3;
+    width: 400px;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.form-information h2 {
+    font-size: 1.3rem;
+}
+
+.reservations-hotel-image-one img {
+    margin-top: 1.2rem;
+}
+
+.reservations-first-highlight section h2 {
+    font-size: 1.4rem;
+}
+
+.temple-hotel-image-one img {
+    width: auto;
+    height: auto;
+}
+
+/* Thank you page styles -connected to reservation forms */
+.thank-you-page-styles {
+    margin-bottom: 3.5rem;
+}
+
+.thank-you-page-styles h1 {
+    font-size: 1.8rem;
+}
+
+/*----- END OF RESERVATIONS PAGE SPECIFIC STYLES --------------*/
+
+/*----- START OF CONTACT US PAGE SPECIFIC STYLES ----*/
+
+/* contact hero-banner image css */
+
+.contact-us-banner {
+    min-height: 60vh;
+    /* display: grid;
+    place-items: center;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/banner-contact-us-image.jpg") center/cover no-repeat;
+}
+
+.contact-us-container {
+    text-align: center;
+}
+
+.contact-us-container h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #1573B7;
+    width: 25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.contact-us-simple-message {
+    font-size: 1.3rem;
+    color: #1573B7;
+    width: 30rem;
+    max-width: 32rem;
+}
+
+/*End of contact hero-banner image css */
+
+.address-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.address-container h3 {
+    font-size: 1rem;
+    margin-bottom: -0.8rem;
+    font-style: italic;
+}
+
+.address-container p {
+    font-size: 0.9rem;
+}
+
+.each-contact {
+    min-width: 100px;
+    margin: 0.3rem;
+    padding: 0.2rem;
+}
+
+#contact-us-heading h2 {
+    text-align: center;
+}
+
+/* start of contact-us grid */
+
+.contact-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.contact-us-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.contact-us-hotel-image-one {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    width: 400px;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.contact-us-first-highlight {
+    grid-column: 6 / 11;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+
+/* end of contact-us grid */
+
+/*----- END OF CONTACT US PAGE SPECIFIC STYLES ----*/
+
+
+/*----- START OF SERVICES PAGE SPECIFIC STYLES ----*/
+
+/* services hero-banner image css */
+
+.services-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1573B7;
+    width: 25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.services-simple-message {
+    font-size: 1.3rem;
+    color: #1573B7;
+    width: 30rem;
+    max-width: 32rem;
+}
+
+/*End of services hero-banner image css */
+
+.services-first-highlight h2 {
+    font-size: 2rem;
+}
+
+.services-second-highlight h2 {
+    font-size: 2rem;
+}
+
+
+/* start of services grid */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.services-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.services-hotel-image-one {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    width: 400px;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.services-first-highlight {
+    grid-column: 6 / 11;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.services-second-highlight {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    height: auto;
+}
+
+.services-hotel-image-two {
+    grid-column: 6 / 11;
+    grid-row: 2 / 3;
+    width: 400px;
+    height: auto;
+}
+
+/* end of services grid */
+
+/*----- END OF SERVICES PAGE SPECIFIC STYLES ----*/
+
+/*----- START OF FULL TIME MISSIONARIES PAGE SPECIFIC STYLES ----*/
+
+.full-time-missionaries-first-highlight h2 {
+    font-size: 2rem;
+}
+
+.full-time-missionaries-second-highlight h2 {
+    font-size: 2rem;
+}
+
+/* start of full time missionaries grid */
+
+.full-time-missionaries-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.full-time-missionaries-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.full-time-missionaries-banner-image {
+    grid-column: 2 / 10;
+    grid-row: 1 / 2;
+    height: auto;
+}
+
+.full-time-missionaries-first-highlight {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.full-time-missionaries-hotel-image-one {
+    grid-column: 6 / 10; 
+    grid-row: 2 / 3;
+    width: 400px;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.full-time-missionaries-hotel-image-two {
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+    width: 400px;
+    height: auto;
+}
+
+.full-time-missionaries-hotel-image-three {
+    grid-column: 6 / 10;
+    grid-row: 3 / 4;
+    height: auto;
+}
+
+/* end of full time missionaries grid */
+
+/*----- END OF FULL-TIME MISSIONARIES PAGE SPECIFIC STYLES ----*/
+
+/*----- START OF RECEPTION PAGE SPECIFIC STYLES ----*/
+
+/* reception hero-banner image css */
+
+.reception-container h1 {
+    font-size: 3rem;
+    width: 25rem;
+    margin-left: 2rem;
+}
+
+/*End of reception hero-banner image css */
+
+/* start of reception grid */
+
+.reception-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.reception-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.reception-hotel-image-one {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    width: 400px;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.reception-first-highlight {
+    grid-column: 6 / 11;
+    grid-row: 1 / 2;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.reception-second-highlight {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    height: auto;
+}
+
+.reception-hotel-image-two {
+    grid-column: 6 / 11;
+    grid-row: 2 / 3;
+    width: 400px;
+    height: auto;
+}
+
+/* end of reception grid */
+
+/*----- END OF RECEPTION PAGE SPECIFIC STYLES ----*/
+
+
+
+
+}
